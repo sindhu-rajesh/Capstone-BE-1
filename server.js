@@ -16,7 +16,7 @@ const userroutes = require('./routes/userroutes');
 const userdataroutes = require ('./routes/userdataroute')
 const quoteroute =require('./routes/quote')
 const ratingroute =require('./routes/rating&review')
-const bookingroute = require('./routes/bookinroutes')
+const bookingroute = require('./routes/bookingroutes')
 const middleware = require('./routes/pro')
 
 
