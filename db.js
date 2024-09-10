@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const MONGODB_URL = 'mongodb://127.0.0.1:27017/Sindhu';
+const MONGODB_URL = 'mongodb+srv://Sindhu:sindhusky07@cluster0.3jqgq.mongodb.net/Cleanease?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(MONGODB_URL);
 
