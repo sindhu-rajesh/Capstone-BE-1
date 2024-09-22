@@ -39,7 +39,7 @@ router.post('/register', async (req, res) => {
       username,
       email,
       password: hashedPassword,
-      isAdmin: false // Set isAdmin to false by default for new users
+      isAdmin: true // Set isAdmin to false by default for new users
     });
 
     // Save the user to the database
@@ -48,7 +48,7 @@ router.post('/register', async (req, res) => {
     res.status(201).json({ message: 'User registered successfully' });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: 'Internal server error' });
+    res.json({ message: error});
   }
 });
 
